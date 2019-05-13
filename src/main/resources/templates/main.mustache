@@ -1,0 +1,18 @@
+<html>
+<body>
+    <div>
+        <form method="post">
+            <input type="text" name="card_id" placeholder="Введите номер карты">
+            <input type="text" name="password" placeholder="Введите пароль">
+            <button type="submit">Добавить</button>
+        </form>
+    </div>
+    <div>Список карт</div>
+    {{#cards}}
+    <div>
+        <b>{{card_id}}</b>
+        <span>{{password}}</span>
+    </div>
+    {{/cards}}
+</body>
+</html>
